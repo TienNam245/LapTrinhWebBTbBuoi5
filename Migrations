@@ -1,0 +1,74 @@
+using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace DuAnDauTien.Migrations
+{
+    /// <inheritdoc />
+    public partial class AddImagePaths : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.UpdateData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: 1,
+                columns: new[] { "Description", "Image" },
+                values: new object[] { "Đàn ông tuổi 15 mơ ước thành đàn ông tuổi 20, đàn ông tuổi 20 mơ ước thành đàn ông tuổi 30, đàn ông tuổi 30 mơ ước được trở thành đàn ông tuổi 40 và đàn ông tuổi 40 lại mơ ước đặt chân lên cổ máy thời gian để quay lại tuổi 30 với toàn bộ tài sản của mình! Vậy đấy!", "/images/sach1.jpg" });
+
+            migrationBuilder.UpdateData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: 2,
+                columns: new[] { "Description", "Image" },
+                values: new object[] { "Đàn ông tuổi 15 mơ ước thành đàn ông tuổi 20, đàn ông tuổi 20 mơ ước thành đàn ông tuổi 30, đàn ông tuổi 30 mơ ước được trở thành đàn ông tuổi 40 và đàn ông tuổi 40 lại mơ ước đặt chân lên cổ máy thời gian để quay lại tuổi 30 với toàn bộ tài sản của mình! Vậy đấy!", "/images/cuoc-song-rat-giong-cuoc.jpg" });
+
+            migrationBuilder.UpdateData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: 3,
+                columns: new[] { "Description", "Image" },
+                values: new object[] { "Sách học lập trình C# từ cơ bản đến nâng cao, bao gồm các kiến thức về biến, kiểu dữ liệu, cấu trúc điều khiển, lớp, đối tượng, kế thừa, đa hình, và các tính năng mới của C#.", "/images/bia_ky_thuat_lap_trinh_c_14.jpg" });
+
+            migrationBuilder.UpdateData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: 4,
+                columns: new[] { "Description", "Image" },
+                values: new object[] { "Sách học lập trình web với ASP.NET Core, bao gồm MVC, Razor Pages, Entity Framework Core, Identity, và triển khai ứng dụng lên môi trường thực tế.", "/images/sach2.jpg" });
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.UpdateData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: 1,
+                columns: new[] { "Description", "Image" },
+                values: new object[] { "Sách hay về tuổi thơ", "" });
+
+            migrationBuilder.UpdateData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: 2,
+                columns: new[] { "Description", "Image" },
+                values: new object[] { "Sách về cuộc sống", "" });
+
+            migrationBuilder.UpdateData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: 3,
+                columns: new[] { "Description", "Image" },
+                values: new object[] { "Sách học lập trình", "" });
+
+            migrationBuilder.UpdateData(
+                table: "Books",
+                keyColumn: "Id",
+                keyValue: 4,
+                columns: new[] { "Description", "Image" },
+                values: new object[] { "Sách học lập trình web", "" });
+        }
+    }
+}
